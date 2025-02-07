@@ -89,7 +89,7 @@ export default function Home() {
 									className="bg-white p-6 rounded-lg shadow-md"
 								>
 									<div className="text-4xl mb-4">{feature.icon}</div>
-									<h3 className="text-xl font-semibold mb-2">
+									<h3 className="text-xl text-black font-semibold mb-2">
 										{feature.title}
 									</h3>
 									<p className="text-gray-600">
@@ -113,7 +113,7 @@ export default function Home() {
 									className="bg-white p-6 rounded-lg shadow-md"
 								>
 									<div className="text-4xl mb-4">{feature.icon}</div>
-									<h3 className="text-xl font-semibold mb-2">
+									<h3 className="text-xl text-black font-semibold mb-2">
 										{feature.title}
 									</h3>
 									<p className="text-gray-600">
