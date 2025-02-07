@@ -4,12 +4,11 @@ import ChatWrapper from "@/components/ChatWrapper";
 import { cookies } from "next/headers";
 
 interface PageProps {
-	params: {
-		url: string | string[] | undefined;
-	};
+	params: Promise<{ url: string | string[] }>;
 }
 
 const Page = async ({ params }: PageProps) => {
+	const resolvedParam = await params;
 	const sessionCookie = (await cookies()).get("sessionId")?.value;
 
 	const reconstructUrl = ({ url }: { url: string[] }) => {
@@ -19,7 +18,9 @@ const Page = async ({ params }: PageProps) => {
 
 		return decodedComponents.join("/");
 	};
-	const reconstructedUrl = reconstructUrl({ url: params.url as string[] });
+	const reconstructedUrl = reconstructUrl({
+		url: resolvedParam.url as string[],
+	});
 
 	const sessionId = (reconstructedUrl + "--" + sessionCookie).replace(
 		/\//g,
