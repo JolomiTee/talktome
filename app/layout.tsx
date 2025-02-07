@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "RAG Talk",
 	description:
-		"RAG Talk is a Retrieval-Augmented Generation chat interface that can take in data from a webpage provided, and make sense out of it to provide more context specific answers to a question",
+		"RAG Talk is a Retrieval-Augmented Generation (RAG) chat interface that can take in data from a webpage provided, and make sense out of it to provide more context specific answers to a question. Experience the power of Retrieval-Augmented Generation for more accurate, context-aware, and informative chat interactions.",
 };
 
 export default function RootLayout({

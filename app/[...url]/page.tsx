@@ -2,6 +2,7 @@ import { redis } from "@/lib/redis";
 import { ragChat } from "../../lib/rag-chat";
 import ChatWrapper from "@/components/ChatWrapper";
 import { cookies } from "next/headers";
+import { Metadata } from "next";
 
 interface PageProps {
 	params: Promise<{ url: string | string[] }>;
