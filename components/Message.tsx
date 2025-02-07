@@ -36,7 +36,7 @@ const Message = ({ content, isUserMessage }: MessageProps) => {
 								{isUserMessage ? "You" : "Website"}
 							</span>
 						</div>
-						<p className="text-sm font-normal py-2.5 text-gray-900 dark::text-white">
+						<p className="text-sm font-normal py-2.5 text-white">
 							{content}
 						</p>
 					</div>
