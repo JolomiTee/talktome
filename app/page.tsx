@@ -1,11 +1,4 @@
-import {
-	BotIcon,
-	Copy,
-	MessagesSquare,
-	PanelsTopLeft,
-	PenSquare,
-} from "lucide-react";
-import Link from "next/link";
+import { BotIcon, Copy, MessagesSquare, PenSquare } from "lucide-react";
 
 export default function Home() {
 	const features = [
@@ -47,6 +40,7 @@ export default function Home() {
 			icon: <MessagesSquare />,
 		},
 	];
+
 	return (
 		<div className="flex flex-col min-h-screen">
 			<header className="bg-white shadow-sm">

@@ -1,8 +1,7 @@
-import { redis } from "@/lib/redis";
-import { ragChat } from "../../lib/rag-chat";
 import ChatWrapper from "@/components/ChatWrapper";
+import { redis } from "@/lib/redis";
 import { cookies } from "next/headers";
-import { Metadata } from "next";
+import { ragChat } from "../../lib/rag-chat";
 
 interface PageProps {
 	params: Promise<{ url: string | string[] }>;
